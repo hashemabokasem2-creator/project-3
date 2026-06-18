@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Market</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <style>
+      :root {
+        --primary-gold: #c4a173;
+        --dark-blue: #202b3c;
+        --yellow-accent: #e5c35c;
+        --green-accent: #2ecc71;
+        --chat-purple: #5a32a3;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      .hero {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.3)),
+          url("./img/image1.avif");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 90vh;
+        position: relative;
+      }
+      .h2 {
+        font-family: Serif, sans-serif;
+      }
+      .p {
+        font-family: Serif, sans-serif;
+      }
+      .bage {
+        transition:
+          transform 0.3s ease-in-out,
+          color 0.3s ease-in-out;
+      }
+      .bage:hover {
+        transform: translateX(12px);
+        color: #e0e0e0;
+      }
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+      .nav-link {
+        border-bottom: 1px solid #64676a;
+      }
+
+      .navbar-toggler {
+        border-color: white;
+      }
+      .START {
+        color: white;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 16px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .START:hover {
+        background-color: white;
+        color: black;
+        font-weight: normal;
+        transform: translatey(-12px);
+      }
+
+      .VIEW {
+        color: white;
+        background-color: var(--yellow-accent);
+        transition:
+          transform 0.3s ease-in-out,
+          box-shadow 0.3s ease,
+          color 0.3s ease-in-out;
+      }
+      .VIEW:hover {
+        color: var(--primary-gold);
+        box-shadow: 0 10px 18px rgb(196, 161, 115);
+        transform: translatey(-12px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar py-3 px-3" style="background-color: var(--dark-blue)">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between flex-wrap gap-2"
+      >
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <a
+            href="#"
+            class="text-white-50 text-decoration-none small d-none d-lg-flex"
+          >
+            <i class="fa-solid fa-caret-left"></i>
+            Modern Architecture & Interior Design Bootstrap Responsive Template
+          </a>
+          <a
+            href="#"
+            class="text-white-50 text-decoration-none small d-md-none"
+          >
+            <i class="fa-solid fa-caret-left"></i>
+            Modern Architecture
+          </a>
+          <div class="d-none d-md-flex align-items-center gap-2 text-white-50">
+            <i class="fa-solid fa-mobile fs-3"></i>
+            <i class="fa-solid fa-tablet fs-3"></i>
+            <i class="fa-solid fa-display fs-3"></i>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-center flex-wrap gap-2 ms-auto justify-content-end"
+        >
+          <button
+            class="btn d-flex py-2 text-white align-items-center gap-2 px-3 btn-sm"
+            style="background-color: var(--green-accent)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="d-none d-md-inline">Add to Cart</span>
+          </button>
+
+          <button class="btn btn-light text-dark py-2 btn-sm fw-normal">
+            <i class="fa-regular fa-face-smile"></i>
+            <span class="d-none d-md-inline">Get Unlimited Downloads</span>
+          </button>
+
+          <a href="#" class="text-white px-2">
+            <i class="fa-solid fa-cart-arrow-down fs-5"></i>
+          </a>
+
+          <button
+            class="btn btn-outline-secondary btn-sm p-1 border-secondary-subtle"
+          >
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid hero">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-warning text-center" href="#">
+              <h2 class="m-0 fw-bold">LUXE</h2>
+              <small style="letter-spacing: 2px">STUDIO</small>
+            </a>
+
+            <!-- Mobile Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div
+              class="collapse navbar-collapse justify-content-end d-none d-lg-flex"
+            >
+              <ul class="navbar-nav align-items-center gap-2">
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Home2</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Services</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Process</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#"
+                    >Testimonials</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link btn text-white px-2" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-12 mt-5">
+              <h1 class="display-1" style="font-family: Serif, sans-serif">
+                Crafting Extraordinary
+              </h1>
+              <h1
+                class="display-1"
+                style="
+                  font-family: Serif, sans-serif;
+                  color: var(--primary-gold);
+                "
+              >
+                Spaces
+              </h1>
+            </div>
+            <div class="col-12 col-md-6">
+              <p class="h4">
+                Where architectural vision meets interior elegance to create
+                environments that inspire and elevate everyday living.
+              </p>
+            </div>
+            <div class="mt-5">
+              <button class="btn px-3 py-2 mx-4 fw-bold VIEW">
+                VIEW OUR WORK
+              </button>
+              <button class="btn px-3 py-2 START">START YOUR PROJECT</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <i class="fa-solid fa-arrow-down fs-1 mt-5"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div
+      class="offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="mainNavbar"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Home2</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >About</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Services</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Portfolio</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Process</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Testimonials</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Blog</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn text-white text-start p-4 bage" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
