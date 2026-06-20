@@ -176,14 +176,36 @@
         background-color: var(--primary-gold);
       }
 
-      .FAQs{
+      .FAQs {
         color: #bdbdbd;
         font-family: Inter, sans-serif;
         transition: transform 0.3s ease;
       }
-      .FAQs:hover{
+      .FAQs:hover {
         color: var(--primary-gold) !important;
       }
+
+      .fixed-icon-btn {
+            position: fixed;
+            bottom: 20px;      
+            right: 20px;        
+            width: 60px;       
+            height: 60px;     
+            background-color: var(--chat-purple);
+            color: #FFFFFF;     
+            border-radius: 50%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;    
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease;    
+        }
+
+        .fixed-icon-btn:hover {
+            transform: scale(1.1);
+        }
     </style>
   </head>
   <body>
@@ -345,6 +367,9 @@
           <div class="col-12 text-center">
             <i class="fa-solid fa-arrow-down fs-1 mt-5"></i>
           </div>
+          <a href="#" class="fixed-icon-btn">
+            <i class="fa-regular fa-comment-dots"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -1677,9 +1702,11 @@
             </div>
           </div>
           <div class="row">
-            <hr>
+            <hr />
             <div class="navbar d-flex justify-content-between">
-              <p class="navbar-brand" style="color: #bdbdbd;">© 2026 Luxe Studio: <em>hashemabokasem2@gmail.com</em></p>
+              <p class="navbar-brand" style="color: #bdbdbd">
+                © 2026 Luxe Studio: <em>hashemabokasem2@gmail.com</em>
+              </p>
               <div class="d-flex gap-5">
                 <p class="FAQs">Privacy Policy</p>
                 <p class="FAQs">Terms of Service</p>
